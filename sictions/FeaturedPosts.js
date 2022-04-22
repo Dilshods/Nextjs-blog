@@ -70,6 +70,5 @@ const FeaturedPosts = () => {
   </div>
   )
 }
-
-export default FeaturedPosts
+export default FeaturedPosts;
 

@@ -92,4 +92,4 @@ const CommentsFrom = () => {
   )
 }
 
-export default CommentsFrom
+export default CommentsFrom;

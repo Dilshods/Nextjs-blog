@@ -20,4 +20,4 @@ const Auhtor = ({author}) => {
   )
 }
 
-export default Auhtor
+export default Auhtor;
