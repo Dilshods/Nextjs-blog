@@ -1,18 +1,16 @@
 import React from 'react';
-import Header from './Header';
+import { Header } from '.';
 import FeaturedPosts from '../sictions/FeaturedPosts';
-
 
 
 const Layout = ({children}) => {
   return (
     <>
-        <Header />
-        <FeaturedPosts />
-        {children} 
+      <Header />
+       <FeaturedPosts />
+      {children}
     </>
   )
-        
-}
+};
 
-export default Layout
+export default Layout;

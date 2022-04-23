@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import moment from "moment"
-
+import React from 'react';
+import moment from 'moment';
+import Link from 'next/link';
 
 const PostCard = ({post}) => {
   return (
@@ -13,7 +13,7 @@ const PostCard = ({post}) => {
           <img 
             src={post.author.photo.url} 
             alt={post.author.name}
-            width="40px"
+            width="30px"
             height="30px"
             className='align-middle rounded-full'
           />
@@ -45,6 +45,6 @@ const PostCard = ({post}) => {
       </div>
     </div>
   )
-}
+};
 
-export default PostCard
+export default PostCard;

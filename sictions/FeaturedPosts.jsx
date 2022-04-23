@@ -36,7 +36,7 @@ const FeaturedPosts = () => {
   }, [])
 
   const customLeftArrow = (
-  <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-white rounded-full">
+    <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-white rounded-full">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 text-indigo w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
       </svg>
@@ -53,22 +53,22 @@ const FeaturedPosts = () => {
 
   return (
     <div className="mb-8 container mx-auto">
-    <Carousel 
-      showDots={true} 
-      autoPlay={true} 
-      autoPlaySpeed={3000} 
-      infinite 
-      customRightArrow={customRightArrow} 
-      customLeftArrow={customLeftArrow} 
-      responsive={responsive}
-      itemClass="px-4"
-    >
-      {dataLoaded && featuredPosts.map((post, index) => (
-        <FeaturedPostCard key={index} post={post} />
-      ))}  
-    </Carousel>
-  </div>
+      <Carousel 
+        showDots={true} 
+        autoPlay={true} 
+        autoPlaySpeed={3000} 
+        infinite 
+        customRightArrow={customRightArrow} 
+        customLeftArrow={customLeftArrow} 
+        responsive={responsive}
+        itemClass="px-4"
+      >
+        {dataLoaded && featuredPosts.map((post, index) => (
+          <FeaturedPostCard key={index} post={post} />
+        ))}  
+      </Carousel>
+    </div>
   )
 }
-export default FeaturedPosts;
 
+export default FeaturedPosts
